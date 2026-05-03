@@ -1,0 +1,249 @@
+:root {
+  --bg-color: #f9fafb;
+  --text-color: #111827;
+  --text-muted: #6b7280;
+  --primary: #2563eb;
+  --primary-hover: #1d4ed8;
+  --border-color: #e5e7eb;
+  --card-bg: #ffffff;
+  --error: #ef4444;
+  --success: #10b981;
+  --font-family: system-ui, -apple-system, sans-serif;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family);
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+#root {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+}
+
+.container {
+  background-color: var(--card-bg);
+  border-radius: 8px;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+  padding: 30px;
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.label {
+  display: block;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* DropZone */
+.dropzone {
+  border: 2px dashed var(--border-color);
+  border-radius: 8px;
+  padding: 40px 20px;
+  text-align: center;
+  cursor: pointer;
+  transition: border-color 0.2s, background-color 0.2s;
+  background-color: var(--bg-color);
+  position: relative;
+}
+
+.dropzone.active {
+  border-color: var(--primary);
+  background-color: #eff6ff;
+}
+
+.dropzone.disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dropzone-text {
+  color: var(--text-muted);
+  font-size: 14px;
+  margin: 0;
+}
+
+.dropzone-file {
+  color: var(--primary);
+  font-weight: 500;
+  margin-top: 8px;
+}
+
+.dropzone-error {
+  color: var(--error);
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.hidden-input {
+  display: none;
+}
+
+/* OptionsPanel */
+.options-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 15px;
+}
+
+.radio-group {
+  display: flex;
+  gap: 15px;
+}
+
+.radio-label {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+.select-input, .range-input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.range-input {
+  padding: 0;
+}
+
+.range-container {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.range-value {
+  font-size: 14px;
+  font-weight: 500;
+  min-width: 20px;
+}
+
+/* ActionButton */
+.action-button {
+  width: 100%;
+  padding: 12px;
+  background-color: var(--primary);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+
+.action-button:hover:not(:disabled) {
+  background-color: var(--primary-hover);
+}
+
+.action-button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.spinner {
+  width: 20px;
+  height: 20px;
+  border: 3px solid rgba(255,255,255,0.3);
+  border-radius: 50%;
+  border-top-color: white;
+  animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}
+
+/* ResultCard */
+.result-card {
+  margin-top: 20px;
+  padding: 20px;
+  background-color: var(--bg-color);
+  border-radius: 6px;
+  border: 1px solid var(--border-color);
+}
+
+.result-card.error {
+  background-color: #fef2f2;
+  border-color: #fecaca;
+  color: var(--error);
+}
+
+.result-title {
+  font-weight: 600;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.result-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-bottom: 20px;
+  font-size: 14px;
+}
+
+.stat-label {
+  color: var(--text-muted);
+}
+
+.stat-value {
+  font-weight: 500;
+}
+
+.download-button {
+  background-color: var(--success);
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  width: 100%;
+}
+
+.download-button:hover {
+  background-color: #059669;
+}
+
+.error-details {
+  font-family: monospace;
+  font-size: 12px;
+  white-space: pre-wrap;
+  background-color: rgba(0,0,0,0.05);
+  padding: 10px;
+  border-radius: 4px;
+  margin-top: 10px;
+  max-height: 200px;
+  overflow-y: auto;
+}

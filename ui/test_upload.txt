@@ -1,0 +1,12 @@
+This is a test file for the FileCompressor web UI!
+It contains some repeated text to test the compression algorithms.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.
+Repeated text. Repeated text. Repeated text. Repeated text. Repeated text.

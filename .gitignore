@@ -1,0 +1,22 @@
+# C++ / CMake build outputs
+build/
+compressor
+test_io
+test_algorithms
+test_parallel
+*.o
+*.out
+*.exe
+
+# Node.js
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Temporary files
+ui/server/tmp/
+*.cmp
+*.bin
+
+# macOS
+.DS_Store
