@@ -101,3 +101,5 @@ You can also use the C++ binary directly from the command line:
 * Memory leaks are prevented natively through C++ smart pointers and RAII.
 * Post-join chunk assembly is used to guarantee **zero shared mutable state** during the hot parallel compression loop.
 * Built-in support for AddressSanitizer (ASan) and ThreadSanitizer (TSan) via CMake flags: `cmake -DSANITIZE_THREAD=ON ..`
+## Link to the YouTube Video 
+https://youtu.be/rqsmVIsQ97A
